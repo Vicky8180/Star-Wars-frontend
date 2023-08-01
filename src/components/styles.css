@@ -1,0 +1,41 @@
+
+
+
+
+  .container {
+    position: relative;
+  }
+  
+  .drawer {
+    position: fixed;
+    top: 0;
+    right: -350px; /* Initial position, hidden off-screen */
+    width: 300px;
+    height: 100%;
+    background-color: #f0f0f0;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: right 0.3s ease-in-out;
+  }
+  
+  .open {
+    right: 0; /* Slide the drawer into view */
+  }
+  
+  .toggleButton {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 70%;
+  }
+  
+  .toggleButton:hover {
+    background-color: #0056b3;
+  }
+  

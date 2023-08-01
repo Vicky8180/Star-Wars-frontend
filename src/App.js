@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Navbar from "./components/Navbar";
+import Body from "./components/Body";
+import RightDrawer from './components/RightDrawer'
+import Poster from "./components/Poster";
+import { useRef } from "react";
 function App() {
+ const childRef=useRef();
+
+
+ function callChildFunction() {
+  childRef.current.changer(); // Call the child component's function
+}
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <>
+   <Navbar/>
+
+  <Body/>
+<RightDrawer/>
+
+{/* 
+<button onClick={callChildFunction}>click</button>
+   
+    <Poster ref={childRef}/> */}
+  
+   </>
   );
 }
 
