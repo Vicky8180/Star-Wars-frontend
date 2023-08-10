@@ -7,6 +7,7 @@ import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Poster from './Poster'
 import Accodian from './Accordian'
+import { Icon } from '@mui/material';
 import Grid from './Grid'
 // import Grid from './Grid'
 import Dummy from './Dummy';
@@ -16,6 +17,7 @@ import Species from './Species';
 import Vehicles from './Vehicles';
 import Starships from './Starships';
 import { Button } from '@mui/material';
+import FolderOpenIcon from '@mui/icons-material/FolderOpen';
 export default function Body() {
 
 
@@ -84,8 +86,8 @@ export default function Body() {
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-     
-          <Typography >Film</Typography>
+     {/* <Icon><FolderOpenIcon/></Icon> */}
+          <Typography >   Film</Typography>
         </AccordionSummary>
         <AccordionDetails>
        <Typography onClick={changer4}>Film</Typography>

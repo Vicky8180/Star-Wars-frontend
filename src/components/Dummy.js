@@ -11,7 +11,7 @@ export default function Dummy() {
                 {/* <h2>Dashboard</h2> */}
                 <h5>Star Wars is an American epic space opera multimedia franchise created by George Lucas, which began with the eponymous 1977 film and quickly became a worldwide pop culture phenomenon.</h5>
             </div>
-            <button>Explor</button>
+            {/* <button>Explor</button> */}
         </div>
         
     </>
